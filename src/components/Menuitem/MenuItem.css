@@ -1,0 +1,38 @@
+.menuItem {
+      width: 100%;
+      margin: 1rem 0;
+
+      display: flex;
+      flex-direction: column;
+}
+
+.menuItem__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.menuItem__sub {
+      width: 100%;
+      margin-top: 0.2rem;
+}
+
+.menuItem__head-name {
+      flex: 1;
+}
+
+.menuItem__head-price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      min-width: 60px;
+}
+
+.menuItem__head-dash {
+      width: 90px;
+      height: 1px;
+
+      background-color: var(--color-golden);
+      margin: 0 1rem;
+}

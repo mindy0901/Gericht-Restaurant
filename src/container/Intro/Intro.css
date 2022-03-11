@@ -1,0 +1,34 @@
+.video-button {
+      color: white;
+      font-size: 400px;
+}
+
+.video {
+      height: 100vh;
+      position: relative;
+}
+
+.video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.video-overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+}
+
+.video-overlay__button {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+}
+
+.video-button {
+      font-size: 90px;
+      color: var(--color-golden);
+      opacity: 0.8;
+}
