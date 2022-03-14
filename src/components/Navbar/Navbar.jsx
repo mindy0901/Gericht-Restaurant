@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Navbar.css';
 import images from '../../constants/images';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
+import { Link } from "react-scroll"
 
 const Navbar = () => {
       const [toggleMenu, setToggleMenu] = useState(false);
@@ -11,11 +12,21 @@ const Navbar = () => {
                         <img src={images.gericht} alt="app logo" />
                   </div>
                   <ul className="app__navbar-links">
-                        <li className="p__opensans"> <a href="1">Home</a> </li>
-                        <li className="p__opensans"> <a href="2">About</a> </li>
-                        <li className="p__opensans"> <a href="3">Menu</a> </li>
-                        <li className="p__opensans"> <a href="4">Awards</a> </li>
-                        <li className="p__opensans"> <a href="5">Contact</a> </li>
+                        <Link to="home" smooth={true} duration={1000}>
+                              <li className="p__opensans"> Home</li>
+                        </Link>
+                        <Link to="about" smooth={true} duration={1000}>
+                              <li className="p__opensans"> About </li>
+                        </Link>
+                        <Link to="menu" smooth={true} duration={1000}>
+                              <li className="p__opensans"> Menu</li>
+                        </Link>
+                        <Link to="laurels" smooth={true} duration={1000}>
+                              <li className="p__opensans"> Awards</li>
+                        </Link>
+                        <Link to="contact" smooth={true} duration={1000}>
+                              <li className="p__opensans"> Contact</li>
+                        </Link>
                   </ul>
                   <div className="app__navbar-login">
                         <a href="7" className="p__opensans">Log In / Register</a>
